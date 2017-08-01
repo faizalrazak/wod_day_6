@@ -1,7 +1,8 @@
 function timeCalc(input){
   
-  var hour = Math.trunc(input/60);
-  var min = input % 60;
-  document.write(hour + ":" + min);
+  var hour = input/60;
+  var minute = input%60;
+  var total = Math.floor(hour/10) + Math.floor(hour%10) + Math.floor(minute/10) + Math.floor(minute%10);
+  document.write(total);
 }
 timeCalc(808);
